@@ -1,0 +1,93 @@
+{
+	"info": {
+		"_postman_id": "aa960b39-2b51-451b-a3a0-7ba6f32fefe8",
+		"name": "sales-taxes",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "input 1",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"products\" : [\r\n       {\"quantity\" : 1, \"description\": \"book\", \"amount\":\"12.49\" },\r\n       {\"quantity\" : 1, \"description\": \"music CD\", \"amount\":\"14.99\" },\r\n       {\"quantity\" : 1, \"description\": \"chocolate bar\", \"amount\":\"0.85\" }\r\n   ]\r\n  \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/sales",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"sales"
+					]
+				},
+				"description": "input 3"
+			},
+			"response": []
+		},
+		{
+			"name": "input 2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"products\" : [\r\n       {\"quantity\" : 1, \"description\": \"imported bottle of perfume\", \"amount\":\"27.99\" },\r\n       {\"quantity\" : 1, \"description\": \"bottle of perfume \", \"amount\":\"18.99\" },\r\n       {\"quantity\" : 1, \"description\": \"packet of headache pills\", \"amount\":\"9.75\" },\r\n       {\"quantity\" : 1, \"description\": \"imported box of chocolates\", \"amount\":\"11.25\" }\r\n   ]\r\n  \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/sales",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"sales"
+					]
+				},
+				"description": "input 3"
+			},
+			"response": []
+		},
+		{
+			"name": "input 3",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"products\" : [\r\n       {\"quantity\" : 1, \"description\": \"imported box of chocolates\", \"amount\":\"10.00\" },\r\n       {\"quantity\" : 1, \"description\": \"imported bottle of perfume\", \"amount\":\"47.50\" }\r\n   ]\r\n  \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/sales",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"sales"
+					]
+				},
+				"description": "input 3"
+			},
+			"response": []
+		}
+	]
+}
